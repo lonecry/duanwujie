@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999999;
+    background-color: #f0fdff;
+    /*display          : none;*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading_gif {
+    width: 2.2rem;
+}
+
+body {
+    overflow: hidden;
+}
+
+.music {
+    position: absolute;
+    width: 0.76rem;
+    top: 0.95rem;
+    right: 0.4rem;
+    animation: music 5s infinite linear;
+    -webkit-animation: music 5s infinite linear;
+    z-index: 80000;
+}
+
+.musictips {
+    position: absolute;
+    width: 0.67rem;
+    bottom: 3.75rem;
+    left: 0.2rem;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    animation: musictips 1s infinite linear alternate;
+    -webkit-animation: musictips 1s infinite linear alternate;
+    z-index: 300;
+}
+
+@keyframes musictips {
+    from {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+
+}
+
+@-webkit-keyframes musictips {
+    from {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.1);
+    }
+
+}
+
+.musicup {
+    position: absolute;
+    width: 0.6rem;
+    bottom: 0.1rem;
+    right: 0.3rem;
+    z-index: 99999;
+    transform-origin: 80% 77.5%;
+    -webkit-transform-origin: 80% 77.5%;
+    transform: rotate(-3deg);
+}
+
+@keyframes music {
+    from {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes music {
+    from {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+.music_pause {
+    animation-play-state: paused;
+    /*-webkit-animation-play-state : paused; !* Safari å’Œ Chrome *!*/
+    -webkit-animation: none !important;
+}
+
+.boxoutside, .wrapperinside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    overflow: hidden;
+
+}
+
+.wrapperinside {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.warp {
+    width: 100%;
+    height: 100%;
+    height: 190.44rem;
+    overflow: scroll;
+    /*background: url("../images/bg.jpg") no-repeat top center;*/
+    /*background-size: 100% auto;*/
+}
+
+.bgimg {
+    display: block;
+    width: 7.50rem;
+    height: auto;
+    /*opacity: 0.8;*/
+}
+
+.title {
+    position: absolute;
+    z-index: 10;
+
+}
+
+.t1 {
+    width: 3.14rem;
+    left: 1.8rem;
+    top: 4.2rem;
+}
+
+.t2 {
+    width: 2.40rem;
+    left: 0.4rem;
+    top: 15rem;
+}
+
+.t3 {
+    width: 1.65rem;
+    left: 4.3rem;
+    top: 14.6rem;
+}
+
+.t4 {
+    width: 2.78rem;
+    left: 0.8rem;
+    top: 22.2rem;
+
+}
+
+.t5 {
+    width: 4.25rem;
+    left: 2.9rem;
+    top: 36.7rem;
+
+}
+
+.t6 {
+    width: 3.15rem;
+    left: 4.1rem;
+    top: 42.4rem;
+
+}
+
+.t7 {
+    width: 2.19rem;
+    left: 0.9rem;
+    top: 52rem;
+
+}
+
+.t8 {
+    width: 3.66rem;
+    left: 3.4rem;
+    top: 54.6rem;
+
+}
+
+.t9 {
+    width: 2.37rem;
+    left: 2.7rem;
+    top: 59.4rem;
+}
+
+.t10 {
+    width: 2.37rem;
+    left: 0.2rem;
+    top: 64.9rem;
+}
+
+.t11 {
+    width: 3.15rem;
+    left: 4.3rem;
+    top: 66.7rem;
+}
+
+.t12 {
+    width: 5.71rem;
+    left: 0.5rem;
+    top: 75.8rem;
+}
+
+.t13 {
+    width: 4.81rem;
+    left: 2.5rem;
+    top: 78.1rem;
+}
+
+.t14 {
+    width: 4.96rem;
+    left: 1.5rem;
+    top: 84rem;
+}
+
+.t15 {
+    width: 5.45rem;
+    left: 0.4rem;
+    top: 90.4rem;
+}
+
+.t16 {
+    width: 4.13rem;
+    left: 1.8rem;
+    top: 94.2rem;
+}
+
+.t17 {
+    width: 6.89rem;
+    left: 0.3rem;
+    top: 106.1rem;
+}
+
+.t18 {
+    width: 1.84rem;
+    left: 5rem;
+    top: 109.5rem;
+}
+
+.t19 {
+    width: 5.87rem;
+    left: 0.8rem;
+    top: 118.7rem;
+}
+
+.t20 {
+    width: 3.42rem;
+    left: 2rem;
+    top: 127.5rem;
+}
+
+.t21 {
+    width: 3.80rem;
+    left: 0.4rem;
+    top: 136rem;
+}
+
+.t22 {
+    width: 3.55rem;
+    left: 3.8rem;
+    top: 139.3rem;
+}
+
+.t23 {
+    width: 3.94rem;
+    left: 3.1rem;
+    top: 146.3rem;
+}
+
+.t24 {
+    width: 4.90rem;
+    left: 0.8rem;
+    top: 158.3rem;
+}
+
+.t25 {
+    width: 1.72rem;
+    left: 5.2rem;
+    top: 164.9rem;
+}
+
+.t26 {
+    width: 4.14rem;
+    left: 1.7rem;
+    top: 174.8rem;
+}
+
+.t27 {
+    width: 4.50rem;
+    left: 2.1rem;
+    top: 186.3rem;
+}
+
+.g1 {
+    width: 6.05rem;
+    left: 0.3rem;
+    top: 5.2rem;
+}
+
+.g2 {
+    /*黑色的人影*/
+    width: 0.98rem;
+    left: 2.8rem;
+    top: 23.3rem;
+}
+
+.g3 {
+    /*云层*/
+    width: 4.38rem;
+    left: 1.8rem;
+    top: 20.3rem;
+}
+
+.g4 {
+    /*小船  当时的人们。。。。*/
+    width: 3.91rem;
+    left: 1.5rem;
+    top: 36.9rem;
+}
+
+.g5 {
+    /*飘柔*/
+    width: 2.77rem;
+    left: 0rem;
+    top: 42rem;
+}
+
+.g6 {
+    /*香囊1*/
+    width: 1.50rem;
+    left: 5.4rem;
+    top: 53.6rem;
+}
+
+.g7 {
+    /*香囊2*/
+    width: 3.14rem;
+    left: 1rem;
+    top: 56.3rem;
+}
+
+.g8 {
+    width: 2.20rem;
+    left: 5.2rem;
+    top: 69.8rem;
+}
+
+.g9 {
+    width: 2.17rem;
+    left: 0.2rem;
+    top: 71.6rem;
+}
+
+.g10 {
+    width: 2.20rem;
+    left: 1.5rem;
+    top: 73.7rem;
+}
+
+.g11 {
+    width: 7.50rem;
+    left: 0rem;
+    top: 77.4rem;
+    animation: flash 1s infinite ease-in-out;
+}
+
+.g12 {
+    width: 3.62rem;
+    left: 3.9rem;
+    top: 87.9rem;
+    z-index: 1;
+}
+
+.g13 {
+    width: 1.35rem;
+    left: 3.9rem;
+    top: 96.2rem;
+    z-index: 1;
+    transform-origin: 0 100%;
+    animation: dao1 1s infinite alternate ease-in-out;
+}
+
+.g14 {
+    width: 2.05rem;
+    left: 6.8rem;
+    top: 97.6rem;
+    z-index: 1;
+    transform-origin: 0 100%;
+    animation: dao2 1s 1s infinite alternate ease-in-out;
+
+}
+
+.g15 {
+    width: 2.54rem;
+    left: 5.1rem;
+    top: 126.9rem;
+    z-index: 1;
+}
+
+.g16_1 {
+    width: 5.56rem;
+    left: 1.9rem;
+    top: 132.9rem;
+    z-index: 1;
+}
+
+.g16_2 {
+    width: 5.56rem;
+    left: 1.9rem;
+    top: 132.9rem;
+    z-index: 1;
+}
+
+.g17_1 {
+    width: 1.54rem;
+    left: 0.5rem;
+    top: 147.9rem;
+    z-index: 1;
+}
+
+.g17_2 {
+    width: 1.42rem;
+    left: 2.3rem;
+    top: 146.9rem;
+    z-index: 1;
+}
+
+.g17_3 {
+    width: 1.20rem;
+    left: 4.3rem;
+    top: 147.7rem;
+    z-index: 1;
+}
+
+.g17_4 {
+    width: 1.57rem;
+    left: 5.9rem;
+    top: 148.3rem;
+    z-index: 1;
+}
+
+.g18 {
+    width: 4.56rem;
+    left: 2.2rem;
+    top: 169.3rem;
+    z-index: 1;
+}
+
+.g19 {
+    width: 2.11rem;
+    left: 3.9rem;
+    top: 176.3rem;
+    z-index: 1;
+    animation: peopleslide 2s infinite ease;
+
+}
