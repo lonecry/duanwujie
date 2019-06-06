@@ -155,213 +155,282 @@ body {
 
 .t1 {
     width: 3.14rem;
+    height: 1.19rem;
     left: 1.8rem;
     top: 4.2rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title1.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t2 {
     width: 2.40rem;
+    height: 1.10rem;
     left: 0.4rem;
     top: 15rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title2.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t3 {
     width: 1.65rem;
+    height: 2rem;
     left: 4.3rem;
     top: 14.6rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s 0.2s forwards ease;
+    background: url("../images/title3.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t4 {
     width: 2.78rem;
+    height: 1.85rem;
     left: 0.8rem;
     top: 22.2rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title4.png") no-repeat;
+    background-size: 100% 100%;
 
 }
 
 .t5 {
     width: 4.25rem;
+    height: 1.75rem;
     left: 2.9rem;
     top: 36.7rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title5.png") no-repeat;
+    background-size: 100% 100%;
 
 }
 
 .t6 {
     width: 3.15rem;
+    height: 1.63rem;
     left: 4.1rem;
     top: 42.4rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title6.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t7 {
     width: 2.19rem;
+    height: 0.57rem;
     left: 0.9rem;
     top: 52rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title7.png") no-repeat;
+    background-size: 100% 100%;
 
 }
 
 .t8 {
     width: 3.66rem;
+    height: 0.58rem;
     left: 3.4rem;
     top: 54.6rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s 1s forwards ease;
+    background: url("../images/title8.png") no-repeat;
+    background-size: 100% 100%;
 
 }
 
 .t9 {
     width: 2.37rem;
+    height: 0.58rem;
     left: 2.7rem;
     top: 59.4rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s 2s forwards ease;
+    background: url("../images/title9.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t10 {
     width: 2.37rem;
+    height: 2.26rem;
     left: 0.2rem;
     top: 64.9rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title10.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t11 {
     width: 3.15rem;
+    height: 1.13rem;
     left: 4.3rem;
     top: 66.7rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s 0.3s forwards ease;
+    background: url("../images/title11.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t12 {
     width: 5.71rem;
+    height: 1.53rem;
     left: 0.5rem;
     top: 75.8rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title12.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t13 {
     width: 4.81rem;
+    height: 1.65rem;
     left: 2.5rem;
     top: 78.1rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s 0.3s forwards ease;
+    background: url("../images/title13.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t14 {
     width: 4.96rem;
+    height: 1.53rem;
     left: 1.5rem;
     top: 84rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title14.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t15 {
     width: 5.45rem;
+    height: 1.06rem;
     left: 0.4rem;
     top: 90.4rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s 1s forwards ease;
+    background: url("../images/title15.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t16 {
     width: 4.13rem;
+    height: 1.05rem;
     left: 1.8rem;
     top: 94.2rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s 2s forwards ease;
+    background: url("../images/title16.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t17 {
     width: 6.89rem;
+    height: 1.13rem;
     left: 0.3rem;
     top: 106.1rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title17.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t18 {
     width: 1.84rem;
     left: 5rem;
+    height: 2.48rem;
     top: 109.5rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title18.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t19 {
     width: 5.87rem;
+    height: 0.57rem;
     left: 0.8rem;
     top: 118.7rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title19.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t20 {
     width: 3.42rem;
+    height: 0.47rem;
     left: 2rem;
     top: 127.5rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title20.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t21 {
     width: 3.80rem;
+    height: 0.95rem;
     left: 0.4rem;
     top: 136rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title21.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t22 {
     width: 3.55rem;
+    height: 0.95rem;
     left: 3.8rem;
     top: 139.3rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s 1s forwards ease;
+    background: url("../images/title22.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t23 {
     width: 3.94rem;
+    height: 1.43rem;
     left: 3.1rem;
     top: 146.3rem;
     display: none;
     opacity: 0;
     animation: slideDown 1s forwards ease;
+    background: url("../images/title23.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .longzhou1 {
@@ -382,38 +451,50 @@ body {
 
 .t24 {
     width: 4.90rem;
+    height: 0.48rem;
     left: 0.8rem;
     top: 158.3rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s forwards ease;
+    background: url("../images/title24.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t25 {
     width: 1.72rem;
+    height: 2.87rem;
     left: 5.2rem;
     top: 164.9rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s 1s forwards ease;
+    background: url("../images/title25.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t26 {
     width: 4.14rem;
+    height: 0.47rem;
     left: 1.7rem;
     top: 174.8rem;
     display: none;
     opacity: 0;
     animation: slideUp 1s 2s forwards ease;
+    background: url("../images/title26.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .t27 {
     width: 4.50rem;
+    height:0.95rem;
     left: 2.1rem;
     top: 186.3rem;
     display: none;
     opacity: 0;
     animation: slideUp 3s forwards ease;
+    background: url("../images/title27.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .g1 {
