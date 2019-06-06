@@ -23,11 +23,13 @@
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .music {
-    position: absolute;
+    position: fixed;
     width: 0.76rem;
     top: 0.95rem;
     right: 0.4rem;
@@ -122,16 +124,18 @@ body {
 
 }
 
+.boxoutside {
+    height: 190.44rem;
+}
+
 .wrapperinside {
-    overflow-x: hidden;
-    overflow-y: scroll;
+
 }
 
 .warp {
     width: 100%;
-    height: 100%;
     height: 190.44rem;
-    overflow: scroll;
+    /*overflow: scroll;*/
     /*background: url("../images/bg.jpg") no-repeat top center;*/
     /*background-size: 100% auto;*/
 }
@@ -153,24 +157,36 @@ body {
     width: 3.14rem;
     left: 1.8rem;
     top: 4.2rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 }
 
 .t2 {
     width: 2.40rem;
     left: 0.4rem;
     top: 15rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 }
 
 .t3 {
     width: 1.65rem;
     left: 4.3rem;
     top: 14.6rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s 0.2s forwards ease;
 }
 
 .t4 {
     width: 2.78rem;
     left: 0.8rem;
     top: 22.2rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 
 }
 
@@ -178,6 +194,9 @@ body {
     width: 4.25rem;
     left: 2.9rem;
     top: 36.7rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 
 }
 
@@ -185,13 +204,18 @@ body {
     width: 3.15rem;
     left: 4.1rem;
     top: 42.4rem;
-
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 }
 
 .t7 {
     width: 2.19rem;
     left: 0.9rem;
     top: 52rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 
 }
 
@@ -199,6 +223,9 @@ body {
     width: 3.66rem;
     left: 3.4rem;
     top: 54.6rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s 1s forwards ease;
 
 }
 
@@ -206,114 +233,187 @@ body {
     width: 2.37rem;
     left: 2.7rem;
     top: 59.4rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s 2s forwards ease;
 }
 
 .t10 {
     width: 2.37rem;
     left: 0.2rem;
     top: 64.9rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 }
 
 .t11 {
     width: 3.15rem;
     left: 4.3rem;
     top: 66.7rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s 0.3s forwards ease;
 }
 
 .t12 {
     width: 5.71rem;
     left: 0.5rem;
     top: 75.8rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 }
 
 .t13 {
     width: 4.81rem;
     left: 2.5rem;
     top: 78.1rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s 0.3s forwards ease;
 }
 
 .t14 {
     width: 4.96rem;
     left: 1.5rem;
     top: 84rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 }
 
 .t15 {
     width: 5.45rem;
     left: 0.4rem;
     top: 90.4rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s 1s forwards ease;
 }
 
 .t16 {
     width: 4.13rem;
     left: 1.8rem;
     top: 94.2rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s 2s forwards ease;
 }
 
 .t17 {
     width: 6.89rem;
     left: 0.3rem;
     top: 106.1rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 }
 
 .t18 {
     width: 1.84rem;
     left: 5rem;
     top: 109.5rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 }
 
 .t19 {
     width: 5.87rem;
     left: 0.8rem;
     top: 118.7rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 }
 
 .t20 {
     width: 3.42rem;
     left: 2rem;
     top: 127.5rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 }
 
 .t21 {
     width: 3.80rem;
     left: 0.4rem;
     top: 136rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 }
 
 .t22 {
     width: 3.55rem;
     left: 3.8rem;
     top: 139.3rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s 1s forwards ease;
 }
 
 .t23 {
     width: 3.94rem;
     left: 3.1rem;
     top: 146.3rem;
+    display: none;
+    opacity: 0;
+    animation: slideDown 1s forwards ease;
+}
+
+.longzhou1 {
+    animation: longzhou1 4s infinite linear;
+}
+
+.longzhou2 {
+    animation: longzhou2 5s infinite linear;
+}
+
+.longzhou3 {
+    animation: longzhou3 6s infinite linear;
+}
+
+.longzhou4 {
+    animation: longzhou4 7s infinite linear;
 }
 
 .t24 {
     width: 4.90rem;
     left: 0.8rem;
     top: 158.3rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s forwards ease;
 }
 
 .t25 {
     width: 1.72rem;
     left: 5.2rem;
     top: 164.9rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s 1s forwards ease;
 }
 
 .t26 {
     width: 4.14rem;
     left: 1.7rem;
     top: 174.8rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 1s 2s forwards ease;
 }
 
 .t27 {
     width: 4.50rem;
     left: 2.1rem;
     top: 186.3rem;
+    display: none;
+    opacity: 0;
+    animation: slideUp 3s forwards ease;
 }
 
 .g1 {
@@ -327,6 +427,7 @@ body {
     width: 0.98rem;
     left: 2.8rem;
     top: 23.3rem;
+
 }
 
 .g3 {
@@ -334,6 +435,9 @@ body {
     width: 4.38rem;
     left: 1.8rem;
     top: 20.3rem;
+    display: none;
+    opacity: 0;
+    animation: g2 3s forwards ease;
 }
 
 .g4 {
@@ -341,6 +445,9 @@ body {
     width: 3.91rem;
     left: 1.5rem;
     top: 36.9rem;
+    display: none;
+    opacity: 0;
+    animation: g4 3s forwards ease;
 }
 
 .g5 {
@@ -350,11 +457,20 @@ body {
     top: 42rem;
 }
 
+.g5_1 {
+    /*飘柔*/
+    width: 4.88rem;
+    left: -0.5rem;
+    top: 45.8rem;
+}
+
 .g6 {
     /*香囊1*/
     width: 1.50rem;
     left: 5.4rem;
     top: 53.6rem;
+    transform-origin: 0 0;
+    animation: g6 3s ease infinite alternate;
 }
 
 .g7 {
@@ -434,6 +550,19 @@ body {
     left: 1.9rem;
     top: 132.9rem;
     z-index: 1;
+    transform-origin: 50% 50%;
+    animation: rorate 1s ease infinite alternate;
+}
+
+@keyframes rorate {
+    form {
+        transform: rotate(3deg);
+
+    }
+    to {
+        transform: rotate(4deg);
+    }
+
 }
 
 .g17_1 {

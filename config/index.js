@@ -1,6 +1,6 @@
 'use strict'
 const path = require('path')
-const dataId = ''//后台唯一ID
+const dataId = '260003'//后台唯一ID
 module.exports = {
     dev: {
         // Paths

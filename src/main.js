@@ -2,11 +2,10 @@ import 'swiper/dist/css/swiper.css'
 import './assets/css/reset.css';
 import './assets/css/animation.css';
 import './assets/css/css.css';
-import Swiper from "swiper";
 import $ from "jquery";
 import {CountUp} from 'countup.js';
 import {fenxiang} from "./lib/fenxiang"
-
+// import VConsole from 'vconsole/dist/vconsole.min.js' //import vconsole
 let index = 0
 let air = 1 / 40;
 let clickTimes = 0;
@@ -19,22 +18,20 @@ let playused = false;
 let change = false
 let scrolled = false
 $(() =>{
-    fenxiang("守护蓝天，我助力！", "浙里的蓝天要你一起守护", "浙里的蓝天要你一起守护", 'http://hudong.cztv.com/259978', "http://o.cztvcloud.com/181/5252245/images/fenxiang.jpg")
+    // var vConsole = new VConsole();
+    // console.log(vConsole);
+    fenxiang("端午，原来你是这样一个时髦boy", "中国蓝融媒体中心", "端午，原来你是这样一个时髦boy", '', "https://ohudong.cztv.com/5/260003/images/fenxiang.jpg")
     init()
     setTimeout(() =>{
         $('.loading').hide()
-    }, 500)
-    let mySwiper = new Swiper('.swiper-container', {
-        initialSlide: 0,
-        direction: 'horizontal',
-        loop: true,
-        speed: 300,
-        autoplay: false,//可选选项，自动滑动
-    })
+        $('.t1').fadeIn()
+    }, 1000)
     //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效
     document.addEventListener("WeixinJSBridgeReady", function (){
         document.getElementById("musics").load();
-        document.getElementById("musics2").load();
+        document.getElementById("longzhou").load();
+        document.getElementById("toujiang").load();
+        document.getElementById("zongzi").load();
         document.getElementById("musics").play();
     }, false);
     document.getElementById("musics").play();
@@ -54,41 +51,50 @@ $(() =>{
             // $(".music").attr("src", "https://o.cztvcloud.com/181/4892748/images/music-on.png")
         }
     });
-    document.getElementById('scrollbox').onscroll = throttle(listenTop, 100)
+    document.body.onscroll = throttle(listenTop, 100)
     function listenTop(){
         //为了保证兼容性，这里取两个值，哪个有值取哪一个
         //scrollTop就是触发滚轮事件时滚轮的高度
-        var scrollTop = document.getElementById("scrollbox").scrollTop;
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        ;
         let remDistence = scrollTop * 7.50 / rem
         // console.log("滚动距离:" + remDistence);
         if (!t2_3[1]) {
             if (remDistence > t2_3[0]) {
                 t2_3[1] = true
                 console.log("t2_3")
+                $('.t2,.t3').show()
             }
         }
         else if (!t4 [1]) {
             if (remDistence > t4[0]) {
                 t4[1] = true
                 console.log("t4")
+                $('.t4,.g3').show()
             }
         }
         else if (!t5 [1]) {
             if (remDistence > t5[0]) {
                 t5[1] = true
                 console.log("t5")
+                $('.t5,.g4').show()
             }
         }
         else if (!t6 [1]) {
             if (remDistence > t6[0]) {
                 t6[1] = true
                 console.log("t6")
+                $('.t6').show()
+                document.getElementById("toujiang").play();
+                BgMUsicPause()
+                document.getElementById("toujiang").addEventListener('ended', musicreturn);
             }
         }
         else if (!t78 [1]) {
             if (remDistence > t78[0]) {
                 t78[1] = true
                 console.log("t78")
+                $('.t7,.t8,.t9').show()
             }
         }
         else if (!t9 [1]) {
@@ -101,18 +107,21 @@ $(() =>{
             if (remDistence > t1011[0]) {
                 t1011[1] = true
                 console.log("t1011")
+                $('.t10,.t11').show()
             }
         }
         else if (!t1213[1]) {
             if (remDistence > t1213[0]) {
                 t1213[1] = true
                 console.log("t1213")
+                $('.t12,.t13').show()
             }
         }
         else if (!t14 [1]) {
             if (remDistence > t14[0]) {
                 t14[1] = true
                 console.log("t14")
+                $('.t14,.t15,.t16').show()
             }
         }
         else if (!t15 [1]) {
@@ -131,42 +140,65 @@ $(() =>{
             if (remDistence > t17[0]) {
                 t17[1] = true
                 console.log("t17")
+                $('.t17').show()
+                document.getElementById("toujiang").pause();
+                document.getElementById("toujiang").currentTime = 0;
+                document.getElementById("toujiang").removeEventListener('ended', musicreturn)
+                document.getElementById("zongzi").play();
+                BgMUsicPause()
+                document.getElementById("zongzi").addEventListener('ended', musicreturn);
             }
         }
         else if (!t18 [1]) {
             if (remDistence > t18[0]) {
                 t18[1] = true
                 console.log("t18")
+                $('.t18').show()
             }
         }
         else if (!t19 [1]) {
             if (remDistence > t19[0]) {
                 t19[1] = true
                 console.log("t19")
+                $('.t19').show()
             }
         }
         else if (!t20 [1]) {
             if (remDistence > t20[0]) {
                 t20[1] = true
                 console.log("t20")
+                $('.t20').show()
             }
         }
         else if (!t2122[1]) {
             if (remDistence > t2122[0]) {
                 t2122[1] = true
                 console.log("t2122")
+                $('.t21,.t22').show()
             }
         }
         else if (!t23 [1]) {
             if (remDistence > t23[0]) {
                 t23[1] = true
                 console.log("t23")
+                $('.t23').show()
+                document.getElementById("zongzi").pause();
+                document.getElementById("zongzi").currentTime = 0;
+                document.getElementById("longzhou").play();
+                BgMUsicPause()
+                document.getElementById("zongzi").removeEventListener('ended', musicreturn);
+                document.getElementById("longzhou").addEventListener('ended', musicreturn);
+                $('.g17_1').addClass('longzhou1')
+                $('.g17_2').addClass('longzhou2')
+                $('.g17_3').addClass('longzhou3')
+                $('.g17_4').addClass('longzhou4')
             }
         }
         else if (!t24 [1]) {
             if (remDistence > t24[0]) {
                 t24[1] = true
                 console.log("t24")
+                $('.t24,.t25,.t26,.t27').show()
             }
         }
         else if (!t25 [1]) {
@@ -275,9 +307,20 @@ function isAndroid(){
     var isAndroid = u.indexOf("Android") > -1 || u.indexOf("Adr") > -1; //android终端
     return isAndroid
 }
+function BgMUsicPause(){
+    if (play_now) {
+        $(".music_play").removeClass("music_pause");
+        $(".music_play").addClass("music_pause");
+        play_now = false;
+        playused = true;
+        $(".bgMusic")[0].pause();
+        // $(".music").attr("src", "https://o.cztvcloud.com/181/4892748/images/music-off.png")
+    }
+}
 function musicreturn(){
-    $('#video').hide()
+    console.log('Ended')
     if (playused) {
+        console.log('Ended2323')
         $(".music_play").removeClass("music_pause");
         play_now = true;
         playused = false;
@@ -285,30 +328,17 @@ function musicreturn(){
         // $(".music").attr("src", "https://o.cztvcloud.com/181/4984956/images/musicon.png")
     }
 }
-var videolists = [
-    "http://v3.cztv.com/cztv/vod/2019/05/27/367acf32a5ad4175a619e833eb93d77d/h264_1500k_mp4.mp4",
-    "http://v3.cztv.com/cztv/vod/2019/05/27/a40e799358d44d9c834573abee880b7d/h264_1500k_mp4.mp4",
-    "http://v3.cztv.com/cztv/vod/2019/05/27/f169977498b34343afae837b4382e2e2/h264_1500k_mp4.mp4",
-    "http://v3.cztv.com/cztv/vod/2019/05/27/65d9f684f3c04899bcbe6349ddc4f779/h264_1500k_mp4.mp4",
-    "http://v3.cztv.com/cztv/vod/2019/05/27/d340f808ff4a4052b9b4253ed0bc9360/h264_1500k_mp4.mp4",
-    "http://v3.cztv.com/cztv/vod/2019/05/27/aebd763c3c60409598fbd337f15803ff/h264_1500k_mp4.mp4",
-    "http://v3.cztv.com/cztv/vod/2019/05/27/d0d969948778451c8e15147b1b8724cb/h264_1500k_mp4.mp4",
-    "http://v3.cztv.com/cztv/vod/2019/05/27/d30caca5c5404214846c1c09d528ccb9/h264_1500k_mp4.mp4",
-    "http://v3.cztv.com/cztv/vod/2019/05/27/ec57bd41a3fa4e64baacb9b4843f72e9/h264_1500k_mp4.mp4",
-    "http://v3.cztv.com/cztv/vod/2019/05/27/3c5515d9b22443cfbbbce19005b12acc/h264_1500k_mp4.mp4",
-    "http://v3.cztv.com/cztv/vod/2019/05/27/717d127f4eaa49a78e6630362351c01a/h264_1500k_mp4.mp4",
-]
-var city = ["杭州", "宁波", "温州", "绍兴", "湖州", "嘉兴", "金华", "衢州", "台州", "丽水", "舟山"]
 //点击量
 $.ajax({
-           url: 'http://d.cztvcloud.com/media/news?data_id=5252245&terminal=web&channel_id=181', /*url     :'http://d.cztvcloud.com/media/news?data_id=764588&terminal=web&channel_id=192',*/
+           url: 'http://d.cztvcloud.com/media/news?data_id=260003&terminal=web&channel_id=181', /*url     :'http://d.cztvcloud.com/media/news?data_id=764588&terminal=web&channel_id=192',*/
            type: 'get',
            dataType: 'jsonp',
            success: function (rlt){
                var hints = rlt.data.hits
+               console.log(hints);
                var analysisurl = "http://d.cztvcloud.com/visit/ie";
                var channelId = '181';
-               var itemId = '5252245';
+               var itemId = '260003';
                var title = 'read';
                var editorId = '';
                var type = '';
