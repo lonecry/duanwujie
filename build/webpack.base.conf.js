@@ -5,6 +5,7 @@ const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+
 function resolve(dir){
     return path.join(__dirname,'..',dir)
 }
@@ -35,7 +36,11 @@ module.exports = {
         alias      : {
             'vue$' : 'vue/dist/vue.esm.js',
             '@'    : resolve('src'),
-        }
+        },
+        modules    : [
+            'node_modules',
+            'assets/sprite' //css在哪里能找到sprite图
+        ]
     },
     module    : {
         rules : [
@@ -88,9 +93,12 @@ module.exports = {
                     limit : 10000,
                     name  : utils.assetsPath('fonts/[name].[ext]')
                 }
-            }
+            },
+
+
         ]
     },
+
     node      : {
         // prevent webpack from injecting useless setImmediate polyfill because Vue
         // source contains it (although only uses it if it's native).
