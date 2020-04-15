@@ -1,6 +1,6 @@
 'use strict'
 const path = require('path')
-const dataId = '260003'//后台唯一ID
+const dataId = '5700816'//后台唯一ID
 module.exports = {
     dev: {
         // Paths
@@ -24,7 +24,6 @@ module.exports = {
         /**
          * Source Maps
          */
-
         // https://webpack.js.org/configuration/devtool/#development
         devtool: 'eval-source-map',
         // If you have problems debugging vue-files in devtools,
@@ -46,7 +45,7 @@ module.exports = {
         // assetsSubDirectory: 'static',
         assetsSubDirectory: '',//设置二级路径
         // assetsPublicPath: 'https://ohudong.cztv.com/5/259978/',
-        assetsPublicPath: dataId ? 'https://ohudong.cztv.com/5/' + dataId + '/' : './',
+        assetsPublicPath: dataId ? 'http://o.cztvcloud.com/181/' + dataId + '/' : './',
         /**
          * Source Maps
          */

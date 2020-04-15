@@ -111,6 +111,8 @@ module.exports = {
         child_process : 'empty'
     },
     devServer : {
-        contentBase : '.'
+	    contentBase : '.',
+	    hot         : true,
+	    inline      : true,
     },
 }
