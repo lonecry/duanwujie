@@ -15,7 +15,7 @@
     "createjs-cmd": "^0.1.0",
     "html-loader": "^0.5.5",
     "html-withimg-loader": "^0.1.16",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-easing": "0.0.1",
     "style-loader": "^0.23.1",
     "swiper": "^4.5.0",
